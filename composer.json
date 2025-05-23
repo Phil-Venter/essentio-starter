@@ -1,7 +1,7 @@
 {
     "name": "essentio/starter",
     "type": "project",
-    "license": "MIT",
+    "license": "0BSD",
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
