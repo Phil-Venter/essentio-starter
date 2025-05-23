@@ -1,0 +1,19 @@
+{
+    "name": "essentio/starter",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Action\\": "actions/"
+        }
+    },
+    "require": {
+        "essentio/core": "dev-main"
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "@php -r \"is_file('.env') || copy('.env.example', '.env');\""
+        ]
+    }
+}

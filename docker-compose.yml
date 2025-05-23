@@ -1,0 +1,19 @@
+services:
+    app:
+        build:
+            context: .
+            dockerfile: docker/php.dockerfile
+        volumes:
+            - .:/var/www/html
+        expose:
+            - "9000"
+
+    caddy:
+        image: caddy:2-alpine
+        ports:
+            - "80:80"
+        volumes:
+            - ./docker/caddyfile:/etc/caddy/Caddyfile
+            - .:/var/www/html
+        depends_on:
+            - app
