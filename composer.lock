@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Phil-Venter/essentio-core.git",
-                "reference": "c27ac4015cf4b390ca623531cd0bf2e399e9ef3d"
+                "reference": "20df35ff9d0c12c61e4d00758c8e9fc37251eac6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Phil-Venter/essentio-core/zipball/c27ac4015cf4b390ca623531cd0bf2e399e9ef3d",
-                "reference": "c27ac4015cf4b390ca623531cd0bf2e399e9ef3d",
+                "url": "https://api.github.com/repos/Phil-Venter/essentio-core/zipball/20df35ff9d0c12c61e4d00758c8e9fc37251eac6",
+                "reference": "20df35ff9d0c12c61e4d00758c8e9fc37251eac6",
                 "shasum": ""
             },
             "require": {
@@ -49,7 +49,7 @@
                 "issues": "https://github.com/Phil-Venter/essentio-core/issues",
                 "source": "https://github.com/Phil-Venter/essentio-core/tree/main"
             },
-            "time": "2025-05-26T09:00:39+00:00"
+            "time": "2025-05-26T09:16:47+00:00"
         }
     ],
     "packages-dev": [],
