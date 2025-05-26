@@ -1,7 +1,7 @@
 <?php
 
 require_once __DIR__ . "/../vendor/autoload.php";
-Essentio\Core\Application::http(__DIR__ . "/..");
+Essentio\Core\Application::web(__DIR__ . "/..");
 require_once base("bootstrap.php");
 
 get("", [Action\Home::class, "view"]);
