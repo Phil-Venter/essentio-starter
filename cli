@@ -1,13 +1,12 @@
 #!/usr/bin/env php
 <?php
 use Essentio\Core\Application;
-use Essentio\Core\Argument;
 
 require_once __DIR__ . "/vendor/autoload.php";
 Application::cli(__DIR__);
-require_once base("bootstrap.php");
+require_once base_path("bootstrap.php");
 
 // php cli greet -> Hello, You
 // php cli greet --name NAME -> Hello, NAME
-command("greet", fn(Argument $args) => error_log(sprintf("Hello, %s", $args->get("name", "You"))));
+command("greet", fn() => error_log(sprintf("Hello, %s", arg("name") ?? "You")));
 

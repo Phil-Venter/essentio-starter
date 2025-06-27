@@ -1,6 +1,6 @@
 <?php
 /** @var \Essentio\Core\Extra\Template $this */
-$this->layout(base("template/layout.tmpl.php")); ?>
+$this->layout(base_path("template/layout.tmpl.php")); ?>
 
 <a href="/">Go back</a>
 <h1>Whoops</h1>
