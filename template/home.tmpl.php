@@ -2,7 +2,7 @@
 /** @var \Essentio\Core\Extra\Template $this */
 $this->layout(base_path("template/layout.tmpl.php")); ?>
 
-<h1>Hello, <?= $name ?? "You" ?></h1>
+<h1>Hello, <?= htmlspecialchars($name ?? "You") ?></h1>
 
 <?php if (!isset($name)): ?>
 <form action="/" method="post">
