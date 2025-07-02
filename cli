@@ -1,12 +1,14 @@
 #!/usr/bin/env php
 <?php
-use Essentio\Core\Application;
-
 require_once __DIR__ . "/vendor/autoload.php";
-Application::cli(__DIR__);
+Essentio\Core\Application::cli(__DIR__);
 require_once base_path("bootstrap.php");
+
+command("serve", fn() => shell_exec("php -S localhost:1234 -t public"));
 
 // php cli greet -> Hello, You
 // php cli greet --name NAME -> Hello, NAME
 command("greet", fn() => error_log(sprintf("Hello, %s", arg("name") ?? "You")));
+
+Essentio\Core\Application::run();
 
